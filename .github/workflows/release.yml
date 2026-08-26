@@ -105,7 +105,7 @@ jobs:
           restore-keys: apt-${{ runner.os }}-
 
       - name: Build fastfetch
-        uses: ranjithrajv/debian-multiarch-builder@v.0.1a23
+        uses: ranjithrajv/debian-multiarch-builder@ba76affc542cf20a439ce49b5ca052bb3e7da9b9 # v.0.1a23
         env:
           # Authenticate GitHub API calls from the builder; anonymous calls
           # from shared runner IPs are rate-limited (60/h) and caused
@@ -196,6 +196,9 @@ jobs:
           apt-get install -y -qq "$1" >/dev/null
           shift; expected="$1"; shift
           for name in "$@"; do
+            # flashfetch is an alias/variant of fastfetch that does not
+            # report --version in the same way, skip it for smoke.
+            case "$name" in flashfetch) echo "  SKIP: $name (alias)"; continue;; esac
             ok=0
             for arg in --version -V version; do
               out="$("$name" "$arg" 2>&1 || true)"
@@ -253,7 +256,7 @@ jobs:
 
       - name: Publish release
         if: steps.dup-gate.outputs.exists == 'false'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
           draft: ${{ inputs.release_mode == 'draft' }}
           tag_name: ${{ needs.prepare.outputs.version }}+${{ needs.prepare.outputs.build_version }}
