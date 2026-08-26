@@ -1,0 +1,51 @@
+{
+  "gate": "pass",
+  "license": {
+    "declared": "MIT",
+    "detected": [
+      "MIT"
+    ],
+    "license_files": [
+      "//tmp/tmp.roAExpBaEi/x/fastfetch-linux-aarch64-polyfilled/usr/share/licenses/fastfetch/LICENSE"
+    ],
+    "matches": true,
+    "status": "pass",
+    "detail": "declared MIT matches detected MIT"
+  },
+  "asset": {
+    "format": "tar.gz",
+    "size": 1485943,
+    "valid": true,
+    "is_html": false,
+    "binary": "flashfetch",
+    "elf_arch": "ARM aarch64",
+    "status": "pass",
+    "detail": "valid tar.gz archive containing 2 ELF executable(s); first: flashfetch (ARM aarch64); release covers: amd64 arm64 armhf i386 ppc64el s390x riscv64 loong64 "
+  },
+  "architectures": {
+    "covered": [
+      "amd64",
+      "arm64",
+      "armhf",
+      "i386",
+      "ppc64el",
+      "s390x",
+      "riscv64",
+      "loong64"
+    ],
+    "missing": [
+      "armel"
+    ],
+    "assets": {
+      "amd64": "fastfetch-linux-amd64-polyfilled.tar.gz",
+      "arm64": "fastfetch-linux-aarch64-polyfilled.tar.gz",
+      "armhf": "fastfetch-linux-armv7l.tar.gz",
+      "i386": "fastfetch-linux-i686.tar.gz",
+      "ppc64el": "fastfetch-linux-ppc64le.tar.gz",
+      "s390x": "fastfetch-linux-s390x.tar.gz",
+      "riscv64": "fastfetch-linux-riscv64.tar.gz",
+      "loong64": "fastfetch-linux-loongarch64.tar.gz"
+    }
+  },
+  "vetted_at": "2026-08-26T04:31:22Z"
+}

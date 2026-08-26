@@ -1,0 +1,9 @@
+# Package definition for fastfetch
+
+package_name: fastfetch
+github_repo: fastfetch-cli/fastfetch
+artifact_format: tar.gz
+description: "A maintained, feature-rich and performance oriented, neofetch like system information tool."
+license: MIT
+
+# Build for all Debian suites and all supported architectures.

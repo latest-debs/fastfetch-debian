@@ -1,0 +1,99 @@
+{
+  "package": "fastfetch",
+  "upstream_repo": "fastfetch-cli/fastfetch",
+  "version": "2.67.1",
+  "tag": "2.67.1",
+  "published_at": "2026-08-14T06:56:43Z",
+  "license": "MIT",
+  "asset": "fastfetch-linux-aarch64-polyfilled.tar.gz",
+  "asset_size": 1485943,
+  "sha256": "c9a112f10ffbea3a7dc664a9c88893cee8fbe85d9f0de16b5192bf68ea500c66",
+  "expected_sha256": "",
+  "checksum_source": "",
+  "checksum_verified": false,
+  "assets": {
+    "fastfetch-linux-aarch64.zip": {
+      "sha256": "8c2832d504c36fedcd7ac3a921a024352b437a31401add0a9223f01dbafb8d60",
+      "size": 6071650
+    },
+    "fastfetch-linux-s390x.zip": {
+      "sha256": "8c74717a833a6b32777823434daae48e412e0c93454859f21be6e147339e4d60",
+      "size": 6014119
+    },
+    "fastfetch-linux-armv7l.zip": {
+      "sha256": "02818f9e80658da83533d8f952b1f91e7ef90bddc9ce6bb9a84e874662174fbc",
+      "size": 5784443
+    },
+    "fastfetch-linux-aarch64-polyfilled.zip": {
+      "sha256": "b601a1ef5f72b8844cb43dd1dd4dcf83cd4b71931bb63cd85d9f0960fe761063",
+      "size": 1510469
+    },
+    "fastfetch-linux-ppc64le.tar.gz": {
+      "sha256": "d0a28e326c50a9d02d3e984b5fe882b732bebb5200e62e2055996fcdbc86b4ba",
+      "size": 5952235
+    },
+    "fastfetch-linux-s390x.tar.gz": {
+      "sha256": "d128729c7b86c3710976f83bba2a0592b04f0c7879c3a9ac99e7992ec06b5d0d",
+      "size": 5990829
+    },
+    "fastfetch-linux-ppc64le.zip": {
+      "sha256": "ae45e67ef7f1b1f0477bced4c130c32390c4175b3d4c2509a19c8c62f5743c59",
+      "size": 5976127
+    },
+    "fastfetch-linux-i686.tar.gz": {
+      "sha256": "f631ab09d5d1fe5fefd183500b9d154f70bde42dcb54551016d868fd1aa1e458",
+      "size": 6295440
+    },
+    "fastfetch-linux-amd64.zip": {
+      "sha256": "93bd1d75c755f1d7cca60c5109ecb66887671f00b8bf68ea014a97615ee68980",
+      "size": 6198587
+    },
+    "fastfetch-linux-armv7l.tar.gz": {
+      "sha256": "ab88e26ce338087623c7e2c539f3d2426871ca2474d5beac3d7505267b0b8b51",
+      "size": 5760325
+    },
+    "fastfetch-linux-loongarch64.tar.gz": {
+      "sha256": "cd988c6ce07a7900570ee7b1e762d923bd81c6e992abf961ada641bbc5c8e5f4",
+      "size": 5851841
+    },
+    "fastfetch-linux-loongarch64.zip": {
+      "sha256": "e5a5a91e9969d6222049334645474013a541f44f87597847785f59a9035cea25",
+      "size": 5875050
+    },
+    "fastfetch-linux-amd64-polyfilled.tar.gz": {
+      "sha256": "ccb0b144d845880692750831a53334029a54ea6ac66b2af40549c7bfad04e250",
+      "size": 1569470
+    },
+    "fastfetch-linux-riscv64.tar.gz": {
+      "sha256": "43301992bea154704cf8cb5834306340ef18c53780d4e5ab08360497cd46e3b0",
+      "size": 5475300
+    },
+    "fastfetch-linux-amd64-polyfilled.zip": {
+      "sha256": "f7453a59c9d8924659c98e146311fe80da5edbfb777f2a833f879f35d8c9b1c1",
+      "size": 1593070
+    },
+    "fastfetch-linux-aarch64-polyfilled.tar.gz": {
+      "sha256": "c9a112f10ffbea3a7dc664a9c88893cee8fbe85d9f0de16b5192bf68ea500c66",
+      "size": 1485943
+    },
+    "fastfetch-linux-riscv64.zip": {
+      "sha256": "3d945fbef2ca15e98ddc94dde7c3b32715cf84e886e162e1d4ba60638a6d1a96",
+      "size": 5498866
+    },
+    "fastfetch-linux-i686.zip": {
+      "sha256": "1df04a12738e48f78f54afae5d251f60965d0cbce8445b0ceede73c387d77c9d",
+      "size": 6319764
+    },
+    "fastfetch-linux-aarch64.tar.gz": {
+      "sha256": "b974b76e3d8df90311440a2250c83561aa0a863f129925285f2789d932b4cbaa",
+      "size": 6049201
+    },
+    "fastfetch-linux-amd64.tar.gz": {
+      "sha256": "adc8a9eb64eccef267e50bb1e6f9a767bb608da5ee4a3b652ef36a10d9105d4d",
+      "size": 6174519
+    }
+  },
+  "asset_count": 20,
+  "vetted_at": "2026-08-26T04:31:21Z",
+  "vetted_by": ""
+}
