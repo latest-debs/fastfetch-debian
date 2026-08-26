@@ -6,8 +6,8 @@ artifact_format: tar.gz
 description: "A maintained, feature-rich and performance oriented, neofetch like system information tool."
 license: MIT
 # fastfetch tar contains usr/bin/fastfetch nested, needs bundle handling
-# The archive top-level is fastfetch-linux-*/usr/bin/fastfetch, so we enable
-# bundle to preserve the usr tree and symlink via bundle logic
+# The archive top-level is fastfetch-linux-*/usr/bin/fastfetch
+binary_path: "usr"
 bundle: true
 
 # Build for all Debian suites and all supported architectures.
