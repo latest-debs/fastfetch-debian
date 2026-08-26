@@ -200,7 +200,7 @@ jobs:
             # are not standalone CLIs (plugin protocol, aliases, protoc
             # plugins) and never report --version - skip them.
             case "$name" in
-              __SMOKE_SKIP_NONE__) echo "  SKIP: $name (smoke_skip)"; continue;;
+              flashfetch) echo "  SKIP: $name (smoke_skip)"; continue;;
             esac
             ok=0
             for arg in --version -V version; do
