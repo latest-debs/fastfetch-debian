@@ -47,7 +47,6 @@ on:
 permissions:
   contents: write
   actions: write
-  variables: write
 
 jobs:
   prepare:
@@ -428,6 +427,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Write failure marker
+        # NOTE: GITHUB_TOKEN can't create/update variables via API (needs a PAT
+        # with variable scope). Wrapped in || true so a 403 here warns instead
+        # of failing the run. To enable the dedup, add a GH_PAT secret and
+        # swap GH_TOKEN below.
         run: |
           set -euo pipefail
           version="${{ needs.prepare.outputs.version }}"
@@ -437,10 +440,12 @@ jobs:
           fi
           value="${version}@$(date +%s)"
           if gh api "repos/$GITHUB_REPOSITORY/actions/variables/SMOKE_FAIL_TAG" >/dev/null 2>&1; then
-            gh api -X PATCH "repos/$GITHUB_REPOSITORY/actions/variables/SMOKE_FAIL_TAG" -f value="$value" >/dev/null
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/actions/variables/SMOKE_FAIL_TAG" -f value="$value" >/dev/null \
+              || echo "::warning::could not update SMOKE_FAIL_TAG (needs GH_PAT)"
           else
             gh api -X POST "repos/$GITHUB_REPOSITORY/actions/variables" \
-              -f name=SMOKE_FAIL_TAG -f value="$value" >/dev/null
+              -f name=SMOKE_FAIL_TAG -f value="$value" >/dev/null \
+              || echo "::warning::could not create SMOKE_FAIL_TAG (needs GH_PAT)"
           fi
           echo "Recorded failure marker: $value (scheduled retries of this tag skip for 48h)"
         env:
