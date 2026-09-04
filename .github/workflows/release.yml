@@ -47,6 +47,7 @@ on:
 permissions:
   contents: write
   actions: write
+  variables: write
 
 jobs:
   prepare:
