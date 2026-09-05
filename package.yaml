@@ -14,3 +14,10 @@ bundle: true
 
 # Binaries that must not be smoke-tested with --version (not standalone CLIs).
 smoke_skip: "flashfetch"
+
+# Opt into native Ubuntu builds (builder >= v.0.1a29). Packages without
+# these are served from the Debian suites via the alias fallback.
+ubuntu_distributions:
+  - jammy
+  - noble
+  - resolute
